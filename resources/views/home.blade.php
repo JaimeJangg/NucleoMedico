@@ -13,13 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    @php 
-                        $suma = 1 + 2;
-                    @endphp
-                    You are logged in!
-                    @foreach(\App\TypeUser::all() as $type)
-                        <a href="google.com">{{$type->type}} {{$suma}}</a>
-                    @endforeach
+                    <h1>{{csrf_token()}}</h1>
                 </div>
             </div>
         </div>

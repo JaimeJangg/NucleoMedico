@@ -33,7 +33,6 @@ class CreateUsersTable extends Migration
             $table->foreign('id_type_user')->references('id')->on('type_user');
         });
     }
-
     /**
      * Reverse the migrations.
      *
